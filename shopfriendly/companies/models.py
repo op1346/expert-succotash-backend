@@ -15,3 +15,11 @@ class Company(models.Model):
 
     def __str__(self):
       return self.company_name
+
+class Product(models.Model):
+    product_name =
+    product_description =
+    category =
+    created_date =
+
+
