@@ -20,8 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-OLD_SECRET_KEY = '@qecad#n^)1jvtc%%leuw+gi0mda-9*y#u9#qx1!=d*tv1cfoq'
-SECRET_KEY = '7h5qj-o#m*yt$1^iazvdsesd+u1w^xazw6rb@^hk&xlb+s48xp'
+SECRET_KEY = '@qecad#n^)1jvtc%%leuw+gi0mda-9*y#u9#qx1!=d*tv1cfoq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rotatesecretkey',
     'users',
 ]
 
@@ -51,8 +49,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-SESSION_ENGINE = 'rotatesecretkey.sessions'
 
 ROOT_URLCONF = 'shopfriendly.urls'
 
